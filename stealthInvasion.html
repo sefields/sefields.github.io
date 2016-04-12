@@ -9,10 +9,26 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
-  <div class = "container marketing">
-		<h1 class="col-sm-4">Stealth Invasion! Crimea</h1>
-  </div>
+   <header class="container">
+    <div class="row">
+      <h1 class="col-md-4">Stealth Invasion! Crimea</h1>
+	  <div class="col-md-2">
+		<a class="btn btn-primary" href="stealthInvasion/prototype/index.html" role="button">Play Now</a>
+	  </div>
+      <nav class="col-md-6 text-right">
+		<a href="index.html">
+			<h5>Work</h5>
+		</a>
+		<a href="about.html">
+			<h5>About</h5>
+		</a>
+		<a href = "resume.pdf">
+			<h5>Resume</h5>
+		</a>
+      </nav>
+    </div>
+  </header>
+  
   <!-- CAROUSEL -->
   <div id="myCarousel" class="carousel" data-ride="carousel">
 	<!-- Indicators -->
@@ -25,18 +41,18 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="images/beans.png" alt="ROSARITA" class = "img-responsive">
+			<img class="img-responsive center-block" src="images/stealthinvasion_screen1.png" alt="StealthInvasion1">
 		</div>
 
 		<div class="item">
-			<img src="images/pants.png" alt="THRIFT">
+			<img class="img-responsive center-block" src="images/stealthinvasion_screen2.png" alt="StealthInvasion2">
 		</div>
 
 		<div class="item">
-			<img src="images/guitar.png" alt="JAGUAR">
+			<img class="img-responsive center-block" src="images/stealthinvasion_screen3.png" alt="StealthInvasion3">
 		</div>
 	</div>
-
+	
 	<!-- Left and right controls -->
 	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -46,6 +62,37 @@
 		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>
+  </div>
+  
+  <div class = "container">
+	<div class = "row">
+		<h4> Stealth Invasion! Crimea was created for UCSC's Winter 2015 Game Programming course, CMPM 20. 
+		Students were tasked with creating a game based on current world events. We satirized Russia's 
+		recent "stealth invasion" of Ukraine with an arcade style game about hiding one soldier at a time,
+		in obvious places and to humorous effect.</h4>
+	</div>
+	<div class = "row">
+		<div class="col-md-4">
+			<h3>Role</h3>
+		</div>
+		<div class="col-md-4">
+			<h3>Technologies</h3>
+		</div>
+		<div class="col-md-4">
+			<h3>Team</h3>
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col-md-4">
+			<h4>Designer, Programmer, Sound, Art</h4>
+		</div>
+		<div class="col-md-4">
+			<h4>Javascript, pixi.js library, Adobe Photoshop</h4>
+		</div>
+		<div class="col-md-4">
+			<h4>"Team I/O" (4 members)</h4>
+		</div>
+	</div>
   </div>
   
   <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

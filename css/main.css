@@ -15,7 +15,29 @@ footer .row {
 
 header h1 {
   font-weight: 700;
-  margin: 0;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #7689AA;
+  margin: 20px;
+  text-align: center;
+}
+
+h4 {
+  color: #5C5C5C;
+  margin: 20px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5C5C5C;
+  margin: 20px;
+  text-align: center;
 }
 
 header nav {
@@ -28,15 +50,21 @@ header p {
   margin: 0;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('../images/bus.jpg');
+  background-image: url('../images/house.jpg');
   background-position: 0px -350px;
   background-size: cover;
   color: #ffffff;
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .jumbotron h2 {
@@ -56,22 +84,32 @@ section .row img {
   width: 100%;
 }
 
+.carousel img {
+	height: 900px;
+    width: 900px;
+    object-fit: contain;
+}
+
 .col-md-6 {
   margin: 0 0 30px;
 }
 
 .btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #fbd1d5;
-  text-shadow: none;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #7689AA;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
-}
+  border-radius: 2px;
+  border: 0px;
+  color: #7689AA;
+  text-shadow: none;
+  background-color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+ }
 
 .btn-secondary {
   background-color: #E8DFE0;

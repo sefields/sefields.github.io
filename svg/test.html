@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<script src="../snap.svg-min.js"></script>
+<html>
+<head>
+  <title>Sam Fields</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width-device-width,initial-scale-1.0">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+   <header class="container">
+	<div class = "row">
+		<script> 
+			var snap = Snap(1000,800);
+			
+			var selected = false;
+			
+			var element;
+						
+			class Button {
+				constructor(imageFile, tStr) {
+					Snap.load(imageFile+'.svg', 
+						function(data) {
+							//	Grab the svg
+							element = data.select('svg');
+							//	Create a group on our Snap, and add this image
+							var group = snap.group();
+							group.append(data);
+							//	Add interactions
+							element.mousedown(
+								function() {
+									var randomX = (Math.random() * 500 + 250).toString();
+									var randomY = (Math.random() * 400 + 250).toString();
+									console.log('t'+randomX+','+randomY);
+									var spawn = new Veggie( imageFile+'_slice', 't'+randomX+','+randomY);
+								}
+							);
+							element.hover(
+								function() {
+									group.animate({ transform: 's2' }, 1000, mina.bounce );
+								},
+								function() {
+									group.animate({ transform: 's1' }, 1000, mina.bounce );
+								}
+							);
+							
+							//	Where
+							group.transform(tStr);
+						}
+					);
+				}
+			}
+			
+			class Veggie {
+				constructor(imageFile, tStr) {
+					Snap.load(imageFile+'.svg', function(data) {
+						//	Grab the svg
+						element = data.select('svg');
+						//	Create a group on our Snap, and add this image
+						var group = snap.group();
+						group.append(data);
+						
+						//	Add interactions
+						group.drag();
+						
+						//	Where
+						group.transform(tStr);
+						}
+					);
+				}
+			}
+			
+			// THE BUNS BABY
+			var burgerBottom = new Veggie('burger_bottom', 's2t250,160');
+			var burgerTop = new Veggie('burger_top', 's2t250,80');
+			
+			var tomatoButton = new Button('tomato', 't200,500');
+			var onionButton = new Button('onion', 't400,500');
+			var avocadoButton = new Button('avocado','t600,500');
+			var pickleButton = new Button('pickle','t800,500');
+			
+			function tStrToNum(tStr) {
+				var xNum = parseInt(tStr.substr(1,3));
+				var yNum = parseInt(tStr.substr(5,7));
+				return [xNum, yNum];
+			}
+		</script>
+    </div>
+  </header>
+  
+</body>
+</html>

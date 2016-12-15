@@ -19,7 +19,7 @@
 						
 			class Button {
 				constructor(imageFile, tStr) {
-					Snap.load('http://localhost:8000/svg/'+imageFile+'.svg', 
+					Snap.load(/*'http://localhost:8000/svg/'+*/imageFile+'.svg', 
 						function(data) {
 							//	Grab the svg
 							element = data.select('svg');
@@ -55,7 +55,7 @@
 			
 			class Veggie {
 				constructor(imageFile, tStr) {
-					Snap.load('http://localhost:8000/svg/'+imageFile+'.svg', function(data) {
+					Snap.load(/*'http://localhost:8000/svg/'+*/imageFile+'.svg', function(data) {
 						//	Grab the svg
 						element = data.select('svg');
 						//	Create a group on our Snap, and add this image

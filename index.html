@@ -1,107 +1,743 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Sam Fields</title>
-  <meta charset="utf-8"/>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-  <header class="container">
-    <div class="row">
-      <h1 class="col-md-4">The Work Of...</h1>
-	  <div class="col-md-2">
-		<!-- Empty -->
-	  </div>
-      <nav class="col-md-6 text-right">
-		<a href="index.html">
-			<h5>Work</h5>
-		</a>
-		<a href="about.html">
-			<h5>About</h5>
-		</a>
-		<a href = "resume.pdf">
-			<h5>Resume</h5>
-		</a>
-      </nav>
-    </div>
-  </header>
-  <!-- Jumbotron -->
-  <section class="jumbotron">
-    <div class="container">
-      <div class="row text-center">
-        <h2>Sam Fields</h2>
-        <h3>UCSC, Computer Science: Game Design, 2016</h3>
-      </div>
-    </div>
-  </section>
+<html lang="en">
 
-  <!-- Project previews / links -->
-  <section class="container">
-    <div class="row">
-      <figure class="col-sm-6">
-        <h3>FeatherWeight</h3>
-			<a href="panopticon.html">
-				<img src="images/fw_preview.png"/>
-			</a>
-    	</figure>
-    	<figure class="col-sm-6">
-        <h3>UCSC Meal Builder</h3>
-		<a href="ucscmealbuilder.html">
-			<img src="images/ucscmealbuilder.png"/>
-		</a>
-      </figure>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sam Fields</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Sam Fields</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile_cartoon.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Sam Fields</span>
+                        <hr class="star-light">
+                        <span class="skills">Game Designer - Software Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/fw_preview.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ucscmealbuilder_preview.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/stealthinvasion_preview.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/WDWDM_preview.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/hypetrain_preview.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dreamlock_preview.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>I love working with Unity and C#, and I have experience designing apps for kids at Disney. I graduated from the UC Santa Cruz Computer Science: Game Design program in June 2016.  </p>
+                </div>
+                <div class="col-lg-4">
+                    <p>I am always looking to learn and create. My hobbies include guitar, going to shows, and sailing. Thank you for visiting!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>The Splatt Show</h3>
+                        <p>I podcast about game design and industry news with Hayden Platt whenever we both get a second.<br><a href="https://www.youtube.com/channel/UCc2zGzEdKoHcWUTAAf2gpSQ">Check it out!</a></p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <!--<li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>-->
+                            <li>
+                                <a href="https://twitter.com/SamAguera" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/samefields" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <!--<li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Misc.</h3>
+                        <ul class="list-inline item-details">
+                                <li>Playing:
+                                    <strong>Pokemon Moon
+                                    </strong>
+                                </li>
+                                <li>Listening:
+                                    <strong>Mac DeMarco
+                                    </strong>
+                                </li>
+                                <li>Last Show I Saw:
+                                    <strong>Frenship (Sacramento)
+                                    </strong>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Sam Fields 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-    <div class="row">
-      <figure class="col-sm-6">
-        <h3>Stealth Invasion! Crimea</h3>
-		<a href="stealthInvasion.html">
-			<img src="images/stealthinvasion_preview.png"/>
-		</a>
-      </figure>
-      <figure class="col-sm-6">
-        <h3>What Do We Do Meow?</h3>
-		<a href="wdwdm.html">
-			<img src="images/WDWDM_preview.png"/>
-		</a>
-      </figure>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>FeatherWeight</h2>
+                            <hr class="star-primary">
+                            <div id="myCarousel" class="carousel" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img class="img-responsive center-block" src="./img/fw_screen1.png" alt="StealthInvasion1">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/fw_screen2.png" alt="StealthInvasion2">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/fw_screen3.png" alt="StealthInvasion2">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/fw_screen4.png" alt="StealthInvasion2">
+									</div>
+								</div>
+								
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+                            <p>FeatherWeight is a Twitch-integrated arena action game. Twitch chatters vote on what challenges and creatures the streamer will face in each round, with the streamer's ultimate goals being survival and collection of as many chickens as possible. I collaboratively designed and iterated upon core mechanics and programmed movement, NPC behavior, and combat, contributing to other systems whenever necessary.</p>
+                            <ul class="list-inline item-details">
+                                <li>Role:
+                                    <strong>Lead Developer
+                                    </strong>
+                                </li>
+                                <li>Technologies
+                                    <strong>Unity, C#
+                                    </strong>
+                                </li>
+                                <li>Team:
+                                    <strong>Team Nomad (12 members)
+                                    </strong>
+                                </li>
+								<li>Download:
+                                    <strong><a href="http://whos-watching.me/">http://whos-watching.me</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-	<div class="row">
-      <figure class="col-sm-6">
-        <h3>Project HypeTrain</h3>
-		<a href="hypetrain.html">
-			<img src="images/hypetrain_preview.png"/>
-		</a>
-      </figure>
-      <figure class="col-sm-6">
-        <h3>Dreamlock</h3>
-		<a href="dreamlock.html">
-			<img src="images/dreamlock_preview.png"/>
-		</a>
-      </figure>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>UCSC Meal Builder</h2>
+                            <hr class="star-primary">
+                            <div id="myCarousel1" class="carousel" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img class="img-responsive center-block" src="./img/ucscmealbuilder_screen1.png" alt="StealthInvasion1">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/ucscmealbuilder_screen2.png" alt="StealthInvasion2">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/ucscmealbuilder_screen3.png" alt="StealthInvasion2">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/ucscmealbuilder_screen4.png" alt="StealthInvasion2">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/ucscmealbuilder_screen5.png" alt="StealthInvasion2">
+									</div>
+								</div>
+								
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+                            <p>UCSC Meal Builder is targeted at the average hungry student and contains locations, hours, and menus of on-campus eateries, as well as functionality for those who really love to micro-manage their meal plans and squeeze out every last cent. Created for Software Engineering course.</p>
+                            <ul class="list-inline item-details">
+                                <li>Role:
+                                    <strong>Front End Developer, SCRUM Master
+                                    </strong>
+                                </li>
+                                <li>Technologies:
+                                    <strong>Java, Android Studio, mySQL Lite
+                                    </strong>
+                                </li>
+                                <li>Team:
+                                    <strong>"Team CHAMP" (5 members)
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-  <footer class="container">
-    <div class="row">
-      <p class="col-sm-4">Sam Fields 2016</p>
-      <ul class="col-sm-8">
-        <li class="col-sm-2">
-          <a href="https://github.com/sefields">
-			<p>GitHub</p>
-		  </a>
-        </li>
-        <li class="col-sm-2">
-          <a href="https://twitter.com/SamAguera">
-			<p>Twitter</p>
-		  </a>
-        </li>
-        <li class="col-sm-2">
-          <a href="http://www.last.fm/user/junkthemighty">
-		    <p>last.fm</p>
-		  </a>
-        </li>
-      </ul>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Stealth Invasion! Crimea</h2>
+                            <hr class="star-primary">
+                            <div id="myCarousel2" class="carousel" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img class="img-responsive center-block" src="./img/stealthinvasion_screen1.png" alt="StealthInvasion1">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/stealthinvasion_screen2.png" alt="StealthInvasion2">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/stealthinvasion_screen3.png" alt="StealthInvasion2">
+									</div>
+								</div>
+								
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+                            <p>Stealth Invasion! Crimea satirizes Russia's recent "stealth invasion" of Ukraine with an arcade style game about hiding one soldier at a time, in obvious places and to humorous effect. Created for Game Programming course.</p>
+                            <ul class="list-inline item-details">
+                                <li>Role:
+                                    <strong>Designer, Programmer, Sound
+                                    </strong>
+                                </li>
+                                <li>Technologies:
+                                    <strong>Javascript, Pixi.js
+                                    </strong>
+                                </li>
+                                <li>Team:
+                                    <strong>Team I/O (4 members)
+                                    </strong>
+                                </li>
+								<li>Play Now:
+                                    <strong><a href="./stealthInvasion/prototype/index.html">Click Here</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
- </body>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>What Do We Do Meow?</h2>
+                            <hr class="star-primary">
+                            <div id="myCarousel3" class="carousel" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img class="img-responsive center-block" src="./img/wdwdm_screen1.png" alt="StealthInvasion1">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/wdwdm_screen2.png" alt="StealthInvasion2">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/wdwdm_screen3.png" alt="StealthInvasion2">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/wdwdm_screen4.png" alt="StealthInvasion2">
+									</div>
+								</div>
+								
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+                            <p>What Do We Do Meow? was created in 48 hours during Global Game Jam 2015, the theme of which was "What do we do now?". Our game explored this question in the context of a happy couple who suddenly live in different places. I co-designed the game and narrative with my teammates, and created all art assets.</p>
+                            <ul class="list-inline item-details">
+                                <li>Role:
+                                    <strong>Designer, Artist
+                                    </strong>
+                                </li>
+                                <li>Technologies:
+                                    <strong>Unity, Adobe Photoshop
+                                    </strong>
+                                </li>
+                                <li>Team:
+                                    <strong>Team What Do We Do Meow? (5 members)
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>HypeTrain</h2>
+                            <hr class="star-primary">
+                            <div id="myCarousel4" class="carousel" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img class="img-responsive center-block" src="./img/hypetrain_screen1.png" alt="StealthInvasion1">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/hypetrain_screen2.png" alt="StealthInvasion2">
+									</div>
+								</div>
+								
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+                            <p>HypeTrain is a run-and-gun action game about robbing a very, very long train. It has been a spare-time project of myself and several other students. Although I started off on this project as Art Lead, I have worn many hats and have done such tasks as creating a buddy AI and overhauling the "Hype" power-up system using a more object-oriented design.</p>
+                            <ul class="list-inline item-details">
+                                <li>Role:
+                                    <strong>Programmer, Artist, Designer
+                                    </strong>
+                                </li>
+                                <li>Technologies:
+                                    <strong>Unity, C#, Adobe Photoshop
+                                    </strong>
+                                </li>
+                                <li>Team:
+                                    <strong>Ursa Major Games
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Dreamlock</h2>
+                            <hr class="star-primary">
+                            <div id="myCarousel5" class="carousel" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img class="img-responsive center-block" src="./img/dreamlock_screen1.png" alt="StealthInvasion1">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/dreamlock_player.png" alt="StealthInvasion2">
+									</div>
+									
+									<div class="item">
+										<img class="img-responsive center-block" src="./img/dreamlock_tiger.png" alt="StealthInvasion2">
+									</div>
+								</div>
+								
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#myCarousel5" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel5" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+                            <p>Dreamlock puts the player in the shoes of a cartoon dinosaur, solving puzzles to wake up from bizarre dreamscapes. I co-designed the game with my partner and created all art assets. Created for Intro Game Design course.</p>
+                            <ul class="list-inline item-details">
+                                <li>Role:
+                                    <strong>Designer, Artist
+                                    </strong>
+                                </li>
+                                <li>Technologies:
+                                    <strong>Game Maker, Adobe Photoshop
+                                    </strong>
+                                </li>
+                                <li>Team:
+                                    <strong>Splatt Specifications (2 members)
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
 </html>

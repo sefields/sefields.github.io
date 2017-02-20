@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Checkout Test</title>
+	</head>
+	<body>
+		<div>
+			<form action="https://checkouttest.herokuapp.com/" method="POST">
+				<script
+					src="https://checkout.stripe.com/checkout.js"
+					class="stripe-button"
+					data-key="pk_test_0nfwfb5CB1XU81VuK9UDwzTa"
+					data-name="YOUR_NAME"
+					data-description="Hello, world!"
+					data-amount="51"
+				>
+				</script>
+				<input name="amount" value="51" type="hidden">
+				<input name="description" value="Hello, world!" type="hidden">
+			</form>
+		</div>
+	</body>
+</html>
